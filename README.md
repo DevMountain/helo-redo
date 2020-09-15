@@ -59,11 +59,11 @@ You have already created a React application as part of setting up the Github re
 3) Open your `.gitignore` and add the `.env` file to it.
 4) Open `server/index.js` and require `masssive` and `dotenv` (make sure to invoke config on `dotenv`).
 5) Go to [Heroku](https://heroku.com) and create a database (you can also use a database you already have created, but just be careful not to name your tables for Helo the same thing as any of the tables that already exist in your database)
-6) Copy the connection URI for your new or existing database and save it in your `.env` file (make sure you put `?ssl=true` on the end of the string).
+6) Copy the connection URI for your new or existing database and save it in your `.env` file.
 7) Create a folder called `db` at the root of the project.
 8) Set up `massive` in your server using the connection string you saved in your `.env` file.
 9) Make sure to run `nodemon` again and make sure your database is connecting.
-10) Copy the connection string from your `.env` file into `SQLTabs` and create the users table and the posts table.
+10) Copy the connection string from your `.env` file into `SQLTabs` and create the users table and the posts table  (make sure you put `?ssl=true` on the end of the string when using SQLTabs).
 11) Update the password column on your users table from datatype VARCHAR(20) to datatype TEXT using an ALTER TABLE command. Save this command to an SQL file in your `db` folder. Your mentor will check this after you have completed your skills check. 
 12) It's helpful to insert some dummy data into your database at this point to help you test as you go along. 
 
